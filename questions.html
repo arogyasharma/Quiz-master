@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Master | Quiz</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Quiz</a>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="quiz-section active">
+      <div class="quiz-box">
+        <h2 class="question-text" id="question-text"></h2>
+        <div class="option-list" id="option-list"></div>
+        <div class="quiz-footer">
+          <span class="question-progress" id="question-progress"></span>
+          <button class="next-button button" id="nextBtn" style="display: none;">Next Question</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="result-section">
+      <div class="result-box">
+        <h2>Quiz Result!</h2>
+        <p class="score-text">
+          Your Score: <span id="score">0</span>/<span id="total-questions">0</span>
+        </p>
+        <div class="result-buttons">
+          <button class="restart-button button" id="restartBtn">Restart Quiz</button>
+          <button class="home-button button" id="homeBtn">Home</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+</body>
+</html>

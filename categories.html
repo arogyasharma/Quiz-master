@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Master | Categories</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Quiz</a>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">About</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="quiz-container">
+      <h1 class="fade-in">Welcome to <span>Quiz Master</span></h1>
+      <p class="sub-text">Test your knowledge and challenge yourself!</p>
+
+      <div class="categories">
+        <div class="category-card" data-category="Science">
+          <div class="category-icon">🔬</div>
+          <h2>Science</h2>
+        </div>
+        <div class="category-card" data-category="History">
+          <div class="category-icon">🏛️</div>
+          <h2>History</h2>
+        </div>
+        <div class="category-card" data-category="Geography">
+          <div class="category-icon">🌍</div>
+          <h2>Geography</h2>
+        </div>
+        <div class="category-card" data-category="Sports">
+          <div class="category-icon">⚽</div>
+          <h2>Sports</h2>
+        </div>
+        <div class="category-card" data-category="Technology">
+          <div class="category-icon">💻</div>
+          <h2>Technology</h2>
+        </div>
+        <div class="category-card" data-category="Movies">
+          <div class="category-icon">🎬</div>
+          <h2>Movies</h2>
+        </div>
+      </div>
+
+      <div class="back-btn">
+        <a href="index.html" class="btn back-btn">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-content">
+      <h2>Quiz Guide</h2>
+      <ol>
+        <li>Read each question carefully.</li>
+        <li>Select the correct answer.</li>
+        <li>No negative marking.</li>
+        <li>Good luck!</li>
+      </ol>
+      <div class="popup-buttons">
+        <button id="exit-quiz" class="popup-button">Exit</button>
+        <button id="continue-quiz" class="popup-button">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="categories.js"></script>
+</body>
+</html>

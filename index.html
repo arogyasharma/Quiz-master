@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-Master</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Master | Home</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <main class="main">
-        <header class="header">
-            <a href="#" class="logo">Quiz</a>
-            <nav class="navbar">
-                <a href="#" class="active">Home</a>
-                <a href="#">Caterogies</a>
-                <a href="#">About</a>
-                <a href="#">Login</a>
-            </nav>
-        </header>
-        <section class="home">
-        <div class="home-content">
-            <h1 id="heading">Quiz Master</h1>
-            <p id="details"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quia voluptas dolore qui id, magni amet eligendi optio, odio rem assumenda eos laborum reiciendis earum ex in, pariatur cumque? Praesentium!</p>
-            <button type="submit" class="button">Start Quiz</button>
-        </div>
+  <main class="main">
+    <header class="header">
+
+      <a href="index.html" class="logo">Quiz</a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+      </nav>
+    </header>
+
+    <section class="home active">
+      <div class="home-content">
+        <h1 id="heading">Quiz Master</h1>
+        <p id="details">
+          Welcome to Quiz Master! Test your knowledge and challenge yourself.
+        </p>
+     
+        <button class="button" id="startQuiz">Start Quiz</button>
+      </div>
     </section>
   </main>
-    <div id="popup-overlay" class="popup-overlay">
-        <div class="popup-content">
-            <h2>Quiz Guide</h2>
-            <ol>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet cons.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            </ol>
-            <div class="popup-buttons">
-                <button id="exit-quiz" class="popup-button">Exit Quiz</button>
-                <button id="continue-quiz" class="popup-button">Continue</button>
-            </div>
-        </div>
-    </div>
 
-    
- 
-    
-   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const startQuizButton = document.getElementById("startQuiz");
+      startQuizButton.addEventListener("click", () => {
+        window.location.href = "categories.html";
+      });
+    });
+  </script>
 </body>
 </html>
