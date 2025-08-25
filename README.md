@@ -1,1 +1,1 @@
-quiz- master
+Quiz Master
